@@ -40,7 +40,7 @@ let getInfoAllStudents = async () => {
 getInfoAllStudents()
 
 
-let InfoStudentsGrifendor = async () => {
+export let InfoStudentsGrifendor = async () => {
     try {
         let infoApiStudentsGrifendor = await fetch(`${BASE_URL}/house/gryffindor`)
         let infoStudentsGrifendorArr = await infoApiStudentsGrifendor.json()
