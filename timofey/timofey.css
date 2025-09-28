@@ -1,0 +1,13 @@
+body {
+    background-color: #000000;
+}
+.PeopleInHouses {
+    font-family: "Roboto Slab";
+    color: rgba(250, 191, 89, 1);
+font-size: 80px;
+font-weight: 700;
+line-height: 96px;
+letter-spacing: 1%;
+text-align: center;
+text-transform: uppercase;
+}
