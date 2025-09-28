@@ -1,65 +1,67 @@
-1// let getInfoPeoples = async () => {
-//     try {
-//         let infoPeoples = await fetch('https://hp-api.onrender.com/api/characters')
-//         let infoPeoplesArr = await infoPeoples.json()
-//         console.log(infoPeoplesArr)
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
+let BASE_URL = 'https://hp-api.onrender.com/api/characters'
 
-// getInfoPeoples()
+let getInfoPeoples = async () => {
+    try {
+        let infoPeoples = await fetch(BASE_URL)
+        let infoPeoplesArr = await infoPeoples.json()
+        console.log(infoPeoplesArr)
+    } catch (error) {
+        console.error(error)
+    }
+}
 
-
-
-2// let getInfoTeacher = async () => {
-//     try {
-//         let infoTeacher = await fetch('https://hp-api.onrender.com/api/characters/staff')
-//         let infoTeacherArr = await infoTeacher.json()
-//         console.log(infoTeacherArr)
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
-
-// getInfoTeacher()
-
-
-3// let getInfoAllStudents = async () => {
-//     try {
-//         let infoAllStudents = await fetch('https://hp-api.onrender.com/api/characters/students')
-//         let infoAllStudentsArr = await infoAllStudents.json()
-//         console.log(infoAllStudentsArr)
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
-
-// getInfoAllStudents()
-
-
-4// let InfoStudentsGrifendor = async () => {
-//     try {
-//         let infoApiStudentsGrifendor = await fetch('https://hp-api.onrender.com/api/characters/house/gryffindor')
-//         let infoStudentsGrifendorArr = await infoApiStudentsGrifendor.json()
-//         console.log(infoStudentsGrifendorArr)
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
-
-// InfoStudentsGrifendor()
+getInfoPeoples()
 
 
 
-5// let InfoSlytherinAndCharactersHouse = async () => {
-//     try {
-//         let infoSlytherinAndCharacters = await fetch('https://hp-api.onrender.com/api/characters/house/slytherin')
-//         let infoSlytherinAndCharactersArr = await infoSlytherinAndCharacters.json()
-//         console.log(infoSlytherinAndCharactersArr)
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
+let getInfoTeacher = async () => {
+    try {
+        let infoTeacher = await fetch(`${BASE_URL}/staff`)
+        let infoTeacherArr = await infoTeacher.json()
+        console.log(infoTeacherArr)
+    } catch (error) {
+        console.error(error)
+    }
+}
 
-// InfoSlytherinAndCharactersHouse()
+getInfoTeacher()
+
+
+let getInfoAllStudents = async () => {
+    try {
+        let infoAllStudents = await fetch(`${BASE_URL}/students`)
+        let infoAllStudentsArr = await infoAllStudents.json()
+        console.log(infoAllStudentsArr)
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+getInfoAllStudents()
+
+
+let InfoStudentsGrifendor = async () => {
+    try {
+        let infoApiStudentsGrifendor = await fetch(`${BASE_URL}/house/gryffindor`)
+        let infoStudentsGrifendorArr = await infoApiStudentsGrifendor.json()
+        console.log(infoStudentsGrifendorArr)
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+InfoStudentsGrifendor()
+
+
+
+let InfoSlytherinAndCharactersHouse = async () => {
+    try {
+        let infoSlytherinAndCharacters = await fetch(`${BASE_URL}/house/slytherin`)
+        let infoSlytherinAndCharactersArr = await infoSlytherinAndCharacters.json()
+        console.log(infoSlytherinAndCharactersArr)
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+InfoSlytherinAndCharactersHouse()
