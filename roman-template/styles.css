@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(29, 29, 29, 1);
+}
+
+.container {
+    width: 1285px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+.teachers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.teachers-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+.teachers-content__title {
+    color: rgba(250, 191, 89, 1);
+    font-family: 'Bluu Next Cyrillic';
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 693px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    width: 295px;
+    height: 452px;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    width: inherit;
+    height: 272px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px 20px 0px 0px;
+    background: linear-gradient(180.00deg, rgba(15.1904296875, 15.1904296875, 15.1904296875, 1) 13%, rgba(15.061367988586426, 15.061367988586426, 15.061367988586426, 0.74) 59%, rgba(15, 15, 15, 0) 81%);
+}
+
+.card-content__title {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Inter';
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0%;
+}
+
+.card-content__item {
+    color: rgba(250, 191, 89, 1);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+}
+
+.card-content__button {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+}
+
+.card-content__button:hover {
+    cursor: pointer;
+}
