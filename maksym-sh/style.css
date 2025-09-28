@@ -1,0 +1,46 @@
+body {
+    background-color: #1D1D1D;
+}
+h2 {
+    font-family: Bluu Next Cyrillic;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 80px;
+    line-height: 125%;
+    letter-spacing: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FABF59;
+;
+}
+.faculties {
+    width: 1240px;
+    height: 59px;
+    margin: 0 auto;
+    border: 1px solid #D9D9D9;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 84px;
+}
+.faculty {
+    width: 315px;
+    height: 59px;
+    border-radius: 100px;
+    color: #FFF;
+}
+.students-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.students-card {
+    width: 295px;
+    height: 452px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
