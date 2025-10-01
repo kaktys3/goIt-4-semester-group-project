@@ -41,6 +41,19 @@ h2 {
 .students-card {
     width: 295px;
     height: 452px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 20px;
+}
+img {
+    width: 295px;
+    height: 452px;
+    border-radius: 20px;
+}
+h3 {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 26px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
 }
