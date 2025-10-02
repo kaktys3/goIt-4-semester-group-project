@@ -64,12 +64,6 @@ html {
 
   box-sizing: content-box;
 }
-.characters-section__filter-btn:hover {
-  background: #f9b50c;
-}
-.characters-section__filter-btn:focus {
-  background: #f9b50c;
-}
 .characters-section__btns-text {
   color: #fff;
   text-align: center;
@@ -82,12 +76,6 @@ html {
   text-transform: uppercase;
 
   transition: color 0.3s ease;
-}
-.characters-section__filter-btn:hover .characters-section__btns-text {
-  color: #1d1d1d;
-}
-.characters-section__filter-btn:focus .characters-section__btns-text {
-  color: #1d1d1d;
 }
 .characters-section__characters {
   display: flex;
@@ -121,6 +109,8 @@ html {
   gap: 3px;
 
   z-index: 3;
+
+  align-items: start;
 }
 .characters-section__character-name {
   color: #fff;
@@ -189,4 +179,11 @@ html {
   position: absolute;
   bottom: 0;
   z-index: 2;
+}
+
+.active {
+  background: #f9b50c;
+}
+.active-span {
+  color: #1d1d1d;
 }
