@@ -1,13 +1,148 @@
 body {
-    background-color: #000000;
-}
-.PeopleInHouses {
-    font-family: "Roboto Slab";
-    color: rgba(250, 191, 89, 1);
-font-size: 80px;
-font-weight: 700;
-line-height: 96px;
-letter-spacing: 1%;
-text-align: center;
-text-transform: uppercase;
-}
+  background-color: #1e1e1e;
+    font-family: "Roboto Slab", serif;
+  
+  }
+  
+  .PeopleInHouses {
+    font-size: 48px;
+    text-align: center;
+    color: #fabe3d;
+    text-transform: uppercase;
+    margin: 50px 0 20px;
+  }
+  
+  .houses {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .gryffindor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .character-card {
+    background: #2b2b2b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(250, 191, 89, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .character-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .character-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-content h3 {
+    font-size: 20px;
+    margin: 0 0 5px;
+    color: #fff;
+  }
+  
+  .card-content p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #d0d0d0;
+  }
+  
+  .more-info {
+    margin-top: 10px;
+    background: transparent;
+    color: #fabe3d;
+    border: 1px solid #fabe3d;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .more-info:hover {
+    background: #fabe3d;
+    color: #1e1e1e;
+  }
+  
+  
+
+    body {
+      
+      font-family: "Roboto Slab", serif;
+      color: #fff;
+    }
+
+    .choose-house {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #1e1e1e;
+      border: 1px solid #666;
+      border-radius: 50px;
+      padding: 20px 25px; 
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .choose-house div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px 25px; 
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .choose-house div::before {
+      content: "";
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .choose-gryffindor::before {
+      background-image: url("https://i.imgur.com/DTZlP9V.png");
+    }
+    .choose-slytherin::before {
+      background-image: url("https://i.imgur.com/v0G8z5d.png");
+    }
+    .choose-ravenclaw::before {
+      background-image: url("https://i.imgur.com/dgZKVKy.png");
+    }
+    .choose-hufflepuff::before {
+      background-image: url("https://i.imgur.com/TVzN5a3.png");
+    }
+
+    
+    .choose-house div.active {
+      background: #f7b500;
+      color: #000;
+      box-shadow: 0 0 20px rgba(247,181,0,0.7);
+      transform: scale(1.05);
+    }
+
+   
+    .choose-house p {
+      margin: 0;
+    }
