@@ -99,6 +99,8 @@ html {
   width: 295px;
   height: 452px;
   border-radius: 20px;
+
+  background: #dddddd;
 }
 .characters-section__characters-card-info {
   position: absolute;
