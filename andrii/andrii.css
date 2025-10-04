@@ -1,0 +1,106 @@
+.faculty-hufflepuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(29, 29, 29, 1);
+    padding: 100px 0px 0px;
+}
+
+.faculty-hufflepuff__title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fabf59;
+    width: 870px;
+}
+
+.all-faculty {
+    margin: 70px 0px 50px;
+    border: 0px;
+    background: #d9d9d9;
+    border-radius: 100px;
+    display: flex;
+}
+
+.all-faculty__button {
+    width: 315px;
+    padding: 10px 0px;
+    background: #d9d9d9;
+    border: 0px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.faculty-coat-of-arms {
+    pointer-events: none;
+}
+
+.information-for-pesons-hufflepuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 255px;
+    height: 412px;
+    border-radius: 20px;
+    z-index: 1;
+    padding: 20px;
+}
+
+.information-for-pesons-hufflepuff__name {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    color: #fff;
+    padding: 0px 0px 5px;
+}
+
+.information-for-pesons-hufflepuff__alternate-names,
+.information-for-pesons-hufflepuff__faculty,
+.information-for-pesons-hufflepuff__birthday {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fabf59;
+}
+
+.information-for-pesons-hufflepuff__all-information {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.all-information-hufflepuff {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.section-hafflepuff {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(29, 29, 29, 1);
+    padding: 0px 0px 100px;
+}
+
+.information-for-pesons-hufflepuff__box-all-information {
+    display: flex;
+    gap: 10px;
+    padding: 5px 0px 0px;
+}
