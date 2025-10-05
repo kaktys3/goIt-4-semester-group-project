@@ -22,19 +22,14 @@ async function renderRavenclawStudents() {
 
         const imageUrl = student.image && student.image.trim() !== ''
         ? student.image
-        : 'https://placehold.co/600x400/png';
+        : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIZsl5FF9XT27r8KxLQkdbQkWaWgItPHYMA&s';
 
         studentsCard.style.backgroundImage = imageUrl
+
     });
 }
 
-// async function faceStudent() {
-//     const card = document.querySelectorAll(".student-card");
-//     let timer = -1
-//     let fetchStudentImage = await InfoRavenclawAndCharactersHouse()
-//     console.log(fetchStudentImage)
-// }
-// faceStudent()
+
 
 renderRavenclawStudents();
 
