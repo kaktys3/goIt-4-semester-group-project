@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", serif;
+  background: #1e1e1e;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ffc831;
+}
+
+
+.houses {
+  display: flex;
+  justify-content: center;
+  gap: 115px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+
+.house-icon {
+  width: 20px;
+  height: 20px;
+}
+   
+
+.house {
+  padding: 10px 20px;
+  border: 2px solid #555;
+  border-radius: 25px;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.house:hover {
+  background: #444;
+}
+
+.house.active {
+  background:#1a472a; 
+  
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 350px;
+  box-shadow: 0 5px 10px rgba(7, 221, 0, 0.3);
+  background: #000;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+}  
+
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 180px;
+  background: #444;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  font-size: 18px;
+}
+.img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px; 
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #ebe700;
+}
+
+.house-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #9acd32;
+  font-weight: bold;
+}
+
+.info-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #1a472a;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.info-btn:hover {
+  background: #2a623d;
+}
